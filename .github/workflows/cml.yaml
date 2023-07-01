@@ -20,4 +20,3 @@ jobs:
         
           cat metrics.txt >> report.md
           echo "![](out.png)" >> report.md
-          cml check report.md 
