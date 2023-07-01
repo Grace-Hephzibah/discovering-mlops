@@ -19,4 +19,5 @@ jobs:
           python modelCode.py
         
           cat metrics.txt >> report.md
-          cml check create report.md 
+          echo "![](out.png)" >> report.md
+          cml check report.md 
