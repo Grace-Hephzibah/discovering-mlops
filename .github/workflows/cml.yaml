@@ -2,11 +2,11 @@ name: rent-price-pred-model
 on: [push]
 jobs:
   run:
-    runs-on:[ubuntu-latest]
+    runs-on: [ubuntu-latest]
     steps:
-      - users: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: cml_run
-        env: 
+        env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
 
