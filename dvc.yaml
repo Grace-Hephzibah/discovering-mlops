@@ -1,0 +1,11 @@
+stages:
+  train:
+    cmd: python modelCode.py
+    deps:
+    - modelCode.py
+    - data.csv
+    outs:
+    - out.png
+    metrics:
+    - metrics.txt:
+        cache: false
