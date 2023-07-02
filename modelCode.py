@@ -207,7 +207,7 @@ from sklearn.ensemble import RandomForestRegressor
 model = RandomForestRegressor(
                     n_jobs=-1,
                     n_estimators = 500, 
-                    criterion = "absolute_error", 
+                    criterion = "squared_error", 
                     max_samples = 3000
                     )
 model.fit(X_train, y_train)
