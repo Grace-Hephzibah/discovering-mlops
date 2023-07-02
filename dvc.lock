@@ -4,7 +4,6 @@ stages:
     cmd: python modelCode.py
     deps:
     - path: data.csv
-      hash: md5
       md5: 0a38572d43a0ae67be2adf5bebd51a60
       size: 345141
     - path: modelCode.py
@@ -12,7 +11,6 @@ stages:
       size: 4840
     outs:
     - path: metrics.txt
-      hash: md5
       md5: 2b8efdaf05ab3b4da2c36f145776808f
       size: 206
     - path: out.png
